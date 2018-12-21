@@ -3,3 +3,25 @@ Generics
 	 You can
  		* protect runtime error with unexpected asign type
  		* make classes generic  
+ 
+ 	How back end works
+ 		C++ template makes many declaration but Java create just use Object and cast them.
+ 		
+ 	<> is after SE7
+ 	
+ 	You cannot do
+ 		* new
+ 		* instanceof
+ 		* .class
+ 		
+ 	You cannot use generics to static fields, method, and inner class.
+ 	
+ 	The wildcard can be used in a variety of situations: 
+ 	as the type of a parameter, field, or local variable; 
+ 	sometimes as a return type (though it is better programming practice to be more specific). 
+ 	The wildcard is never used as a type argument for a generic method invocation, a generic class instance creation, or a supertype.
+ 	
+ 	List<?> you cannot add elements because element type is not decided.
+ 	 * you cannot call method that has an argument with Type Parameter.
+ 	 
+ 	The type get from List<?> is Object type. 

@@ -21,8 +21,10 @@ public class BoundTypeParameter {
 		b2.classPrint();
 		
 		/*This below is an error because <A> and <B> are not parent and child.
-		 *Bound<A> a3 = new Bound<B>(new B());
-		 *You can do this below.
+		 *Bound<A> a3 = new Bound<B>(new B()); even if you can do A test = new B();
+		 *
+		 *You can do this below. 
+		 *This is called Upper Bounded Wildcards because this bounds classes as children of A. 
 		 * */
 		Bound<? extends A> b3 = new Bound<B>(new B()); 
 		b3.classPrint();
