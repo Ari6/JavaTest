@@ -25,3 +25,5 @@ Generics
  	 * you cannot call method that has an argument with Type Parameter.
  	 
  	The type get from List<?> is Object type. 
+ 	
+　
