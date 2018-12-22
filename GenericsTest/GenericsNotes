@@ -21,9 +21,9 @@ Generics
  	sometimes as a return type (though it is better programming practice to be more specific). 
  	The wildcard is never used as a type argument for a generic method invocation, a generic class instance creation, or a supertype.
  	
- 	List<?> you cannot add elements because element type is not decided.
+ 	Boundary <?> - you cannot add elements because element type is not decided. When you get the object, type is Object.
  	 * you cannot call method that has an argument with Type Parameter.
  	 
  	The type get from List<?> is Object type. 
  	
-　
+　Still need to lean more about upper/lower bounded wildcard 
