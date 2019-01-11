@@ -20,6 +20,9 @@ class ArrayTest {
 		for(Employee e : arrayEmployee1) {
 			Tool.printTool(e);
 		}
+
+		//Stream
+		arrayEmployee1.stream().forEach(Tool::printTool);
 	}
 }
 
