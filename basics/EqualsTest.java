@@ -1,3 +1,5 @@
+package basics;
+
 import java.util.Objects;
 
 public class EqualsTest {
@@ -7,16 +9,16 @@ public class EqualsTest {
 		Contructor c = new Contructor(2, "Sam", 35, 0, 15);
 
 		Manager e = a;
-		System.out.println("a:d " + a.equals(e)); // compare with the same object as Manager and Employee
-		System.out.println("a:e " + a.equals(e)); // compare with the same object as Manager and Manager 
+		System.out.println("a:d " + a.equals(e)); // compare with the same object as basics.Manager and basics.Employee
+		System.out.println("a:e " + a.equals(e)); // compare with the same object as basics.Manager and basics.Manager
 		Employee f = b;	
-		//Manager g = (Manager) b; cannot cast to subclass
-		System.out.println("b:f " + b.equals(f)); // compare with the same object as Employee and Employee
-		//System.out.println(b.equals(g)); // compare with the same object as Manager and Employee 
+		//basics.Manager g = (basics.Manager) b; cannot cast to subclass
+		System.out.println("b:f " + b.equals(f)); // compare with the same object as basics.Employee and basics.Employee
+		//System.out.println(b.equals(g)); // compare with the same object as basics.Manager and basics.Employee
 		System.out.println("Super b:c " + Objects.equals(b, c));
 	}
 }
-/* Contructor class is bad idea since this breaks is-a relationship with Employee.
+/* basics.Contructor class is bad idea since this breaks is-a relationship with basics.Employee.
  * Core Java Volume I chapter reference 5.8
  */
 	class Contructor extends Employee{
@@ -26,6 +28,6 @@ public class EqualsTest {
 			this.wage = wage;
 		}
 	}
-/*	private void printTool(Employee a) {
+/*	private void printTool(basics.Employee a) {
 		System.out.println(a.getClass() + ":" + a.id + ":" + a.name + ":" + a.age + ":" + a.salary);
 	}*/

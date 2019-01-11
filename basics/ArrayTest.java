@@ -1,3 +1,5 @@
+package basics;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,7 +24,10 @@ class ArrayTest {
 		}
 
 		//Stream
+		System.out.println("++++++++Stream+++++++++++");
 		arrayEmployee1.stream().forEach(Tool::printTool);
+
+
 	}
 }
 
