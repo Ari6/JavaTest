@@ -9,4 +9,9 @@ public class Espresso extends Beverage {
     public BigDecimal cost() {
         return new BigDecimal("1.99");
     }
+
+    @Override
+    public void setSize(int size) {
+        this.size = size;
+    }
 }

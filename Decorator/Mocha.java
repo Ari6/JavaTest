@@ -14,4 +14,7 @@ public class Mocha extends CondimentDecorator {
     public BigDecimal cost() {
         return  b.cost().add(new BigDecimal("0.20"));
     }
+    public int getSize() {
+        return b.getSize();
+    }
 }
